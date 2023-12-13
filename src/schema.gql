@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Lista {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Canciones {
+  _id: String!
+  titulo: String!
+  artista: String
+  album: String
+  anio: String
+}
+
+type Query {
+  listas: [Lista!]!
+  lista(id: Int!): Lista!
+  canciones: [Canciones!]!
+}
+
+type Mutation {
+  createLista(createListaInput: CreateListaInput!): Lista!
+  updateLista(updateListaInput: UpdateListaInput!): Lista!
+  removeLista(id: Int!): Lista!
+}
+
+input CreateListaInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateListaInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
